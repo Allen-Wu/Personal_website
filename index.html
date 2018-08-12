@@ -42,6 +42,15 @@
                     function switchFixed(){
                         var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
                         document.getElementById('side').style.position = value;
+                        var dir_path = location.href.substring(0,location.href.lastIndexOf('/'));
+                        var img_path1 = dir_path.concat('/assets/images/wsy.png');
+                        var img_path2 = dir_path.concat('/assets/images/wsy_artist.jpg')
+                        if (document.getElementById('myPhoto').src.toString() === img_path1) {
+                            document.getElementById("myPhoto").setAttribute('src', 'assets/images/wsy_artist.jpg');
+                        }
+                        else if (document.getElementById('myPhoto').src.toString() === img_path2) {
+                            document.getElementById("myPhoto").setAttribute('src', 'assets/images/wsy.png');
+                        }
                     }
                 </script>
                 <input id="cb" type="checkbox">
@@ -72,7 +81,7 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
-                    <img class="avatar" src="assets/images/wsy.png" onload="loading()">
+                    <img id="myPhoto" class="avatar" src="assets/images/wsy.png" onload="loading()">
                 </section>
 
                 <h2 class="name"><b>Shiyu Wu</b></h2>
@@ -268,49 +277,6 @@
                 </ul>
             </section>
 
-            <!-- 工作经历 -->
-            <section class="work info-unit">
-                <h2>
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Work Experience</h2>
-                <hr/>
-                <ul>
-                    <li>
-                        <h3>
-                            <span>[经历1]XX公司－前端开发工程师（实习）</span>
-                            <time>2016.X 至 2017.X</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>深度参与XX项目迭代XX的前端开发工作，独立承担并完成XX、XX、XXXX等功能点的开发，主要维护并修复XX、XX、XX等功能点bug若干。项目采用技术栈
-                                <mark>React+React Router+Node.js+SASS</mark>，实现
-                                <mark>前后端完全分离</mark>。</li>
-                            <li>配合UI和后端，根据产品需求提供H5页面嵌入到后台模板，要求
-                                <mark>移动端显示正常</mark>。</li>
-                            <li>主要参与XXXXXXX的静态页面开发工作，要求
-                                <mark>在支付宝环境下完全兼容</mark>。</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>[经历2]XX－前端开发工程师（实习）</span>
-                            <time>20XX.10-20XX.7</time>
-                        </h3>
-                        <ul class="info-content">
-                            <li>深度参与公司主线产品「XXXX」的前端开发工作，完成帖子快捷回复、
-                                <mark>全站图片懒加载</mark>、活动banner、帖子管理（使用Yii框架）等功能。项目采用技术栈phpWind+NAMP。
-                                <a href="http://itsay.tech/162/" target="_blank">
-                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
-                            <li>主要参与公司产品「XXXX」的前端开发工作，实现接入微博、微信、QQ等
-                                <mark>第三方账号登录</mark>等功能。项目采用技术栈WordPress+NAMP。</li>
-                            <li>活动页面的开发（七夕活动、抽奖活动以及承接外包页面）。</li>
-                            <li>论坛
-                                <mark>图片增量备份</mark>（CentOS+vsftpd+crontab）
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
             <!-- 项目经验 -->
             <section class="project info-unit">
                 <h2>
@@ -332,7 +298,7 @@
                                 [Goal] TODO
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [Advisor] Prof.Chad Jenkins
+                                [Advisor] <a href="http://ohseejay.org/">Prof.Chad Jenkins</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [Contribution] TODO
@@ -409,7 +375,7 @@
                                 [Goal] This project focuses on predicting future gun violence cases by using machine learning methods.
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [Advisor] Prof.Barzan Mozafari
+                                [Advisor] <a href="http://web.eecs.umich.edu/~mozafari/">Prof.Barzan Mozafari</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [Contribution] I help
@@ -437,7 +403,7 @@
                                 [Goal] This project focuses on classifying music genres by applying digital signal process and machine learning techniques.
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [Advisor] Prof.Mert Pilanci
+                                [Advisor] <a href="http://www-personal.umich.edu/~pilanci/">Prof.Mert Pilanci</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [Contribution] I help apply FFT and mel-frequency cepstrum to audio signals to extract features of different music genres. Apply machine leaning algorithm, including k-Nearest Neighbors, k-Means,
@@ -466,7 +432,7 @@
                                 [Goal] Paperman is designed to automatically sort papers based on its usage over two sides.
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [Advisor] Prof.Mian Li
+                                [Advisor] <a href="http://umji.sjtu.edu.cn/lab/ido/index.php/en/mianli">Prof.Mian Li</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [Contribution] I design and construct
@@ -480,6 +446,25 @@
                         </ul>
                     </li>
 
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Work Experience</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[Part-time] Modi Education - High School Tutor</span>
+                            <time>2016.10 - 2017.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>Part time job as an tutor for high school's maths and physics courses.</li>
+                            <li>Duty: 8-hours' weekly lectures. Design specific homework.</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
