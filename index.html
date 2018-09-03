@@ -43,13 +43,13 @@
                         var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
                         document.getElementById('side').style.position = value;
                         var dir_path = location.href.substring(0,location.href.lastIndexOf('/'));
-                        var img_path1 = dir_path.concat('/assets/images/wsy.png');
+                        var img_path1 = dir_path.concat('/assets/images/Shiyu_Wu.png');
                         var img_path2 = dir_path.concat('/assets/images/wsy_artist.jpg')
                         if (document.getElementById('myPhoto').src.toString() === img_path1) {
                             document.getElementById("myPhoto").setAttribute('src', 'assets/images/wsy_artist.jpg');
                         }
                         else if (document.getElementById('myPhoto').src.toString() === img_path2) {
-                            document.getElementById("myPhoto").setAttribute('src', 'assets/images/wsy.png');
+                            document.getElementById("myPhoto").setAttribute('src', 'assets/images/Shiyu_Wu.png');
                         }
                     }
                 </script>
@@ -81,7 +81,7 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
-                    <img id="myPhoto" class="avatar" src="assets/images/wsy.png" onload="loading()">
+                    <img id="myPhoto" class="avatar" src="assets/images/Shiyu_Wu.png" onload="loading()">
                 </section>
 
                 <h2 class="name"><b>Shiyu Wu</b></h2>
