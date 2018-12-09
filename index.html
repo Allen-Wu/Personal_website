@@ -147,11 +147,11 @@
                 <ul>
                     <li>
                         <label>C</label>
-                        <progress value="90" max="100"></progress>
+                        <progress value="85" max="100"></progress>
                     </li>
                     <li>
                         <label>C++</label>
-                        <progress value="85" max="100"></progress>
+                        <progress value="90" max="100"></progress>
                     </li>
                     <li>
                         <label>Matlab</label>
@@ -167,7 +167,7 @@
                     </li>
                     <li>
                         <label>SQL</label>
-                        <progress value="85" max="100"></progress>
+                        <progress value="90" max="100"></progress>
                     </li>
                     <li>
                         <label>Java</label>
@@ -212,7 +212,7 @@
                     <ul>
                         <li>
                             <p>Hi All! 
-                                I am <mark>Shiyu Wu</mark>. You could also call me my English name, <mark>Allen Wu</mark>.</p>
+                                I am <mark>Shiyu Wu</mark>. I also go by my English name, <mark>Allen Wu</mark>.</p>
                         </li>
                         <li>
                             <p>I was born in <mark>Shanghai</mark>, and spend most of my lifetime in this amazing city!</p>
@@ -285,32 +285,38 @@
                 <ul>
                     <li>
                         <h3>
-                            <span>[Project1] Learning Behavior Trees from Demonstration</span>
+                            <span>[Project1] <b>Learning Behavior Trees from Demonstration</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
-                            <time>2018.6-Present</time>
+                            <time>2018.6-2018.9</time>
                         </h3>
                         <ul class="info-content">
-                            <li>On going</li>
+                            <li>Paper submitted to <i>IEEE International Conference on Robotics and Automation (ICRA) 2019</i></li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [Goal] TODO
+                                [Goal] In order to allow the end user
+                                to teach new tasks to robots without expert knowledge, we propose a new learning from demonstration pipeline that
+                                incorporates Behavior Trees, a control architecture, as a new form of policy produced by learning from demonstration.
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
                                 [Advisor] <a href="http://ohseejay.org/">Prof.Chad Jenkins</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] TODO
+                                [Contribution] I designed and implemented BT-Espresso algorithm, which is an algorithm converting the learned decision
+                                tree from demonstration into a Behavior Tree, and other related algorithms. More specifically, I incorporated several boolean simplification 
+                                algorithms into the system, including Espresso heuristic logic minimizer, tabular method, which could efficiently
+                                prune the behavior tree without performance loss. Further improved the system using multi-threading and multi-process 
+                                methods. Developed project GUI based on PyQt module.
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [Demo] TODO
+                                [Demo] <p><iframe width="460" height="255" src="https://www.youtube.com/embed/OFL5x5vuPNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[Project 2] Plenoptic Grasp Pose Detection under Translucency Clutter</span>
+                            <span>[Project 2] <b>Plenoptic Grasp Pose Detection under Translucency Clutter</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
@@ -320,22 +326,27 @@
                             <li>On going</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [Goal] TODO
+                                [Goal] Detect grasp poses of translucent objects or objects under transluceny clutter using plenoptic camera
+                                and learning methods.
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
                                 [Advisor] Prof.Chad Jenkins
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] TODO
+                                [Contribution] I Built the pipeline of incorporating Grasp Pose Generator (GPG) to extract grasp poses’ features of
+                                translucent objects. Implemented data augmentation methods to generate training data. Collected light
+                                field images and point cloud training data. Migrated PointCNN for feature learning on depth likelihood
+                                volumes.
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [Demo] TODO
+                                [Demo]
+                                <p><img src="assets/images/particle_filter_convergence.gif" style="widows: 500px;height: 500px;"></p>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[Project 3] Chez Homie - Mobile Manipulation Project</span>
+                            <span>[Project 3] <b>Chez Homie - Mobile Manipulation Project</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
@@ -351,8 +362,9 @@
                                 [Advisor] Prof.Chad Jenkins
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] I help design and improve the state manager of the project developing a behavior tree method, based on open-source py_trees package. Develop text to speech system for the robot, based on MaryTTS package.
-                                Help integrate more behaviors and features into the project, including head actuation, embedded functionality, etc.
+                                [Contribution] I designed the state manager of the robot by incorporating Behavior Trees and its common
+                                interfaces between Robot Operating System (ROS), based on open-source package. Developed human-robot interactions features, including text speech conversion system, head actuation, robot contorl user
+                                interfaces, and etc.
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                                 [Demo] 
@@ -362,14 +374,43 @@
                     </li>
                     <li>
                         <h3>
-                            <span>[Project 4] Gun Violence Study</span>
+                            <span>[Project 4] <b>Asciiii - Ascii Style Converter</b></span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2018.10-2018.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [Goal] Asciiii is an ASCII style converter made during MHacks11. 
+                                It supports image inputs and ouputs the ASCII-style text strings depicted by the edge information of the input.
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [Online Website] <a href="http://asciiii.com/">Asciiii</a>
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [Contribution] I designed and implemented the image processing algorithms based on OpenCV library. 
+                                Incorporated Canny edge detection, hamming distance-based grid matching, and other algorithms. Improved the 
+                                system using heuristic algorithms and multi-threading to support video streaming application.
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [Demo]
+                                <p><iframe width="460" height="255" src="https://www.youtube.com/embed/psUTc6W8V98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    
+                    <li>
+                        <h3>
+                            <span>[Project 5] <b>Gun Violence Study</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
                             <time>2018.3-2018.5</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [Goal] This project focuses on predicting future gun violence cases by using machine learning methods.
@@ -378,26 +419,22 @@
                                 [Advisor] <a href="http://web.eecs.umich.edu/~mozafari/">Prof.Barzan Mozafari</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] I help
-                                collect and formulate shooting incident, gun ownership, and other gun related data. Use Hidden Markov
+                                [Contribution] I collected and formulated shooting incident, gun ownership, and other gun related data. Used Hidden Markov
                                 Model and ARIMA time-series model to predict the potential location and profile of the shooter of next
-                                shooting incident. Do statistical anaylsis, including ANOVA, false discovery rate analysis.
+                                shooting incident. Performed statistical anaylsis, including ANOVA, false discovery rate analysis.
                                 <br/>
-                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [Demo] TODO
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[Project 5] Music Genre Classification</span>
+                            <span>[Project 6] <b>Music Genre Classification</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
                             <time>2018.2-2018.4</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [Goal] This project focuses on classifying music genres by applying digital signal process and machine learning techniques.
@@ -406,27 +443,27 @@
                                 [Advisor] <a href="http://www-personal.umich.edu/~pilanci/">Prof.Mert Pilanci</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] I help apply FFT and mel-frequency cepstrum to audio signals to extract features of different music genres. Apply machine leaning algorithm, including k-Nearest Neighbors, k-Means,
+                                [Contribution] I applied FFT and mel-frequency cepstrum to audio signals to extract features of different music genres. Apply machine leaning algorithm, including k-Nearest Neighbors, k-Means,
                                 Multi-Class Support Vector Machine,
                                  and Random Forest to perform genre classification. 
-                               Achieve approximate 85% correctness on testing dataset. Design and deploy the project website.
+                               Achieve approximate 85% correctness on testing dataset. Designed and deployed the project website.
                                 This project got the highest score among all course projects.
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [Demo] TODO
+                                [Demo] More information could be found on our project website!
+                                <a href="https://allen-wu.github.io/351/index.html">Click here.</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[Project 6] Paperman-Automatic Paper Sorting Machine</span>
+                            <span>[Project 7] <b>Paperman-Automatic Paper Sorting Machine</b></span>
                             <span class="link">
                                 <a href="#" target="_blank">Demo</a>
                             </span>
                             <time>2015.10-2015.12</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                                 [Goal] Paperman is designed to automatically sort papers based on its usage over two sides.
@@ -435,13 +472,15 @@
                                 [Advisor] <a href="http://umji.sjtu.edu.cn/lab/ido/index.php/en/mianli">Prof.Mian Li</a>
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [Contribution] I design and construct
-                                mechanical structures of the machine to transmit paper. Use CAD to draw the 2D blueprints and 3D
-                                images. Complete the concept diagrams using Solidworks. The machine had averaging 90 percent rate of
-                                correct sorting. The project was honoured with Best Technical Achievement Award in the design expo.
+                                [Contribution] I implemented the algorithm on Arduino to control sensors and step motor for paper
+                                transmission and classification. Designed and constructed mechanical structures of the machine to transmit
+                                paper. Used CAD to draw the 2D blueprints, 3D images, and concept diagrams. The machine had averaging
+                                90 percent rate of correct sorting. The project was honoured with <b>Best Technical Achievement Award</b>
+                                in the design expo.
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [Demo] TODO
+                                [Concept Diagram] 
+                                <p><img src="assets/images/paper_man.jpg" style="height: 255px;width: 460px"></p> 
                             </li>
                         </ul>
                     </li>
@@ -452,8 +491,25 @@
             <!-- 工作经历 -->
             <section class="work info-unit">
                 <h2>
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Work Experience</h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Other Experience</h2>
                 <hr/>
+
+                <ul>
+                    <li>
+                        <h3>
+                            <span><b>Instructional Aide:</b> EECS484 Database Management System</span>
+                            <time>2018.9 - Present</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>Advised by <a href="https://web.eecs.umich.edu/~jag/">Prof. H.V. Jagadish</a></li>
+                            <li>Design and implement one subpart, Grace Hash Join, of Project 4. 
+                                Regular duty includes holding weekly office hour,
+                                 discussion and review session, homework and exam making up and grading.</li>
+                            <li>Student Evaluation: 4.2/5</li>
+                        </ul>
+                    </li>
+                </ul>
+
                 <ul>
                     <li>
                         <h3>
@@ -476,10 +532,17 @@
                 <ul>
                     <li>
                         <h3>
-                            <span>National Scholarship (Top 2%)</span>
+                            <span>National Scholarship</span>
                             <time>2016.9</time>
                         </h3>
                     </li>
+                    <li>
+                        <h3>
+                            <span>King, Roger Scholarship</span>
+                            <time>2018.8</time>
+                        </h3>
+                    </li>
+
                     <li>
                         <h3>
                             <span>EECS Scholar</span>
@@ -494,14 +557,20 @@
                     </li>
                     <li>
                         <h3>
-                            <span>Academic Excellence Scholarship (Second-Class) of SJTU (Top 10%)</span>
-                            <time>2016.11</time>
+                            <span>UM-SJTU JI Distinguished Academic Achievement Award</span>
+                            <time>2016.10</time>
                         </h3>
                     </li>
                     <li>
                         <h3>
-                            <span>UM-SJTU JI Distinguished Academic Achievement Award (Top 2%)</span>
-                            <time>2016.10</time>
+                            <span>Academic Excellence Scholarship (Second-Class) of SJTU (Two Times)</span>
+                            <time>2016.11 / 2017.11</time>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>University Honors</span>
+                            <time>2017.12</time>
                         </h3>
                     </li>
                 </ul>
