@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script>
-        function loading() {
+    <script type="text/javaScript">
+        function imgLoading() {
             document.getElementsByClassName('avatar')[0].style.display = 'block';
             document.getElementsByClassName('loading')[0].style.display = 'none';
         }
@@ -81,11 +81,11 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
-                    <img id="myPhoto" class="avatar" src="assets/images/Shiyu_Wu.png" onload="loading()">
+                    <img id="myPhoto" class="avatar" src="assets/images/Shiyu_Wu.png" onload="imgLoading()">
                 </section>
 
                 <h2 class="name"><b>Shiyu Wu</b></h2>
-                <h4 class="info-job">Senior CS & ECE Student</h4>
+                <h4 class="info-job">A Learner. A System Builder.</h4>
 
             </section>
 
@@ -105,11 +105,11 @@
                     </li>
                     <li>
                         <label>Hometown:</label>
-                        <span><a href="https://en.wikipedia.org/wiki/Shanghai">Shanghai</a> / China</span>
+                        <span><a href="https://en.wikipedia.org/wiki/Shanghai">Shanghai</a>, China</span>
                     </li>
                     <li>
                         <label>Residence:</label>
-                        <span>Ann Arbor / Michigan</span>
+                        <span>Austin, TX</span>
                     </li>
                 </ul>
             </section>
@@ -126,11 +126,11 @@
                     </li>
                     <li>
                         <label>E-mail</label>
-                        <a href="shiyuwu@umich.edu" target="_blank">shiyuwu@umich.edu</a>
+                        <a href="swu@cs.utexas.edu" target="_blank">swu@cs.utexas.edu</a>
                     </li>
                     <li>
                         <label>Linked-In</label>
-                        <a href="https://www.linkedin.com/in/%E7%9F%A2%E7%91%80-%E5%90%B4-64a438126/" target="_blank">Click here</a>
+                        <a href="https://www.linkedin.com/in/shiyuwu-96/" target="_blank">Click here</a>
                     </li>
                     <li>
                         <label>Github</label>
@@ -162,16 +162,20 @@
                         <progress value="85" max="100"></progress>
                     </li>
                     <li>
-                        <label>Latex</label>
-                        <progress value="85" max="100"></progress>
-                    </li>
-                    <li>
                         <label>SQL</label>
                         <progress value="90" max="100"></progress>
                     </li>
                     <li>
                         <label>Java</label>
                         <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Bash</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>SystemVerilog</label>
+                        <progress value="85" max="100"></progress>
                     </li>
                 </ul>
             </section>
@@ -218,16 +222,13 @@
                             <p>I was born in <mark>Shanghai</mark>, and spend most of my lifetime in this amazing city!</p>
                         </li>
                         <li>
-                            <p>I participate in the dual bachelor degree program between<mark><a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a></mark>and the<mark><a href="https://www.umich.edu/">University of Michigan, Ann Arbor</a></mark>.</p>
+                            <p>After spending two wonderful years at <mark>Ann Arbor</mark>, I've moved to <mark>Austin</mark>!</p>
                         </li>
                         <li>
-                            <p>I major in <mark>Computer Science</mark> at the University of Michigan, and <mark>Electrical and Computer Engineering</mark> in Shanghai Jiao Tong University.</p>
+                            <p>I got my dual bachelor degrees from both <mark>University of Michigan</mark>, and <mark>Shanghai Jiao Tong University</mark>.</p>
                         </li>
                         <li>
-                            <p>I have broad interests in EECS field, including <mark>Robotics</mark>, <mark>Digital Signal Processing</mark>, and <mark>Computer System</mark>.</p>
-                        </li>
-                        <li>
-                            <p>I am planning to apply for the graduate school in <mark>2019Fall</mark>!</p>
+                            <p>I have broad interests in EECS field, particularly <mark>Computer System</mark>, and <mark>Robotics</mark>.</p>
                         </li>
                     </ul>
             </section>
@@ -240,11 +241,23 @@
                 <ul>
                     <li>
                         <h3>
-                            <span><b>University of Michigan - Ann Arbor, College of Engineering</b></span>
-                            <time>2017.9-2019.5</time>
+                            <span><b>University of Texas at Austin, College of Natural Sciences</b></span>
+                            <time>2019.8 - 2021.5</time>
                         </h3>
-                        <p><mark>B.E. in Computer Science</mark>,
-                            GPA: <mark>3.97/4.0</mark></p>
+                        <p><mark>M.S. in Computer Science</mark>,
+                            GPA: N/A.</mark></p>
+                        <img 
+                            src="assets/images/ut_cs.svg" 
+                            height="110px"
+                            width="110px" />
+                    </li>
+                    <li>
+                        <h3>
+                            <span><b>University of Michigan - Ann Arbor, College of Engineering</b></span>
+                            <time>2017.9 - 2019.5</time>
+                        </h3>
+                        <p><mark>B.S.E. in Computer Science</mark>,
+                            GPA: <mark>3.97/4.0</mark>, <mark>Summa Cum Laude.</mark></p>
                         <img 
                             src="assets/images/um_logo.svg" 
                             height="110px"
@@ -252,28 +265,28 @@
                     </li>
                     <li>
                         <h3>
-                            <span><b>Shanghai Jiao Tong University</b></span>
-                            <time>2015.9-2019.8</time>
+                            <span><b>Shanghai Jiao Tong University, UM-SJTU Joint Institute</b></span>
+                            <time>2015.9 - 2019.8</time>
                         </h3>
-                        <p><mark>B.E. in Electrical and Computer Engineering</mark>,
-                            GPA: <mark>3.75/4.0</mark></p>
+                        <p><mark>B.S.E. in Electrical and Computer Engineering</mark>,
+                            GPA: <mark>3.75/4.0</mark>, <mark>Outstanding Graduate.</mark></p>
                         <img 
                             src="assets/images/sjtu_logo.png" 
                             height="110px"
                             width="110px" />
                     </li>
-                    <li>
+                    <!-- <li>
                         <h3>
                             <span><b>No.2 High School of East China Normal University</b></span>
-                            <time>2012.9-2015.6</time>
+                            <time>2012.9 - 2015.6</time>
                         </h3>
                         <p><mark>High School</mark>,
-                            GPA: <mark>Top 20%</mark>, Manager of Foundation of Association for Science and Technology</p>
+                            GPA: <mark>Top 20%</mark></p>
                         <img 
                             src="assets/images/efz_logo.jpeg" 
                             height="110px"
                             width="110px" />
-                    </li>
+                    </li> -->
                 </ul>
             </section>
 
@@ -499,11 +512,23 @@
                 <ul>
                     <li>
                         <h3>
-                            <span><b>Instructional Aide:</b> EECS484 Database Management System</span>
-                            <time>2018.9 - Present</time>
+                            <span><b>Teaching Assistant:</b> MKT382 Data Analysis & Visualization</span>
+                            <time>2019.8 - 2020.1</time>
                         </h3>
                         <ul class="info-content">
-                            <li>Advised by <a href="https://web.eecs.umich.edu/~jag/">Prof. H.V. Jagadish</a></li>
+                            <li>Instruct students with basic knowledge of R, SQL, and Python.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h3>
+                            <span><b>Teaching Assistant:</b> EECS484 Database Management System</span>
+                            <time>2018.9 - 2019.5</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>Worked with <a href="https://web.eecs.umich.edu/~jag/">Prof. H.V. Jagadish</a>, Prof. Atul Prakash</li>
                             <li>Design and implement one subpart, Grace Hash Join, of Project 4. 
                                 Regular duty includes holding weekly office hour,
                                  discussion and review session, homework and exam making up and grading.</li>
@@ -515,7 +540,7 @@
                 <ul>
                     <li>
                         <h3>
-                            <span>[Part-time] Modi Education - High School Tutor</span>
+                            <span>Modi Education - High School Tutor</span>
                             <time>2016.10 - 2017.8</time>
                         </h3>
                         <ul class="info-content">
@@ -548,7 +573,7 @@
                     <li>
                         <h3>
                             <span>EECS Scholar</span>
-                            <time>2018.3</time>
+                            <time>2018.3 / 2019.3</time>
                         </h3>
                     </li>
                     <li>
@@ -561,18 +586,6 @@
                         <h3>
                             <span>UM-SJTU JI Distinguished Academic Achievement Award</span>
                             <time>2016.10</time>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>Academic Excellence Scholarship (Second-Class) of SJTU (Two Times)</span>
-                            <time>2016.11 / 2017.11</time>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <span>University Honors</span>
-                            <time>2017.12</time>
                         </h3>
                     </li>
                 </ul>
